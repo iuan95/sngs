@@ -1,0 +1,12 @@
+section
+    .container 
+        .advertisement-container
+            h3.section-title Объявления
+            .advertisement-content
+                each val in [{skidka: "Скидка 20%", text: "При покупке от 1000 ₽ в сети магазинов МагазинМагазиныч ", data: "до 1 апреля"}, {skidka: "Cкидка 20%", text: "При покупке от 1000 ₽ в сети магазинов МагазинМагазиныч ", data: "до 30 апреля"},{skidka: "Скидка 50%", text: "При покупке от 1000 ₽ в сети магазинов МагазинМагазиныч ", data: "до 30 апреля"}, {skidka: "Бесплатная доставка", text: "При покупке от 1000 ₽ в сети магазинов МагазинМагазиныч ", data: "до 1 декабря"},]
+                    .advertisement-content-card
+                        .advertisement-content-card__top
+                            span= val.data
+                        .advertisement-content-card__bottom
+                            span.advertisement-content-card__bottom-skidka= val.skidka
+                            span.advertisement-content-card__bottom-text= val.text

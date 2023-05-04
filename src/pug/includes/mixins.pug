@@ -1,0 +1,53 @@
+mixin icon(name,mod)
+	- mod = mod || ''
+	svg(class="icon icon-" + name + ' ' + mod)
+		use(xlink:href="/img/svg/sprite.svg#" + name)
+	//-	
+				mixin leftMenu(links)
+					.left-menu
+						ul
+							each jj in links
+								if jj.active
+									li.left-menu__item-active
+										a(href=jj.url)
+											span=jj.name
+								else
+									li.left-menu__item
+										a(href=jj.url)
+											span=jj.name
+
+				+leftMenu([{name: 'dasda', url: "#", active: false},{name: 'dasda', url: "#", active: false},{name: 'dasda', url: "#", active: false}])
+
+				mixin docFile(icon, name, url)
+					.doc-file 
+						.doc-file__icon
+							+icon()
+						.doc-file__name
+							a(href=url download)
+								span=name
+
+
+				+docFile('pdf', 'Устав АО "Саханефтегазсбыт" (редакция №6)', './file/text.pdf')
+
+
+
+				.page
+					.page__left-side
+						+leftMenu([{name: 'dasda', url: "#", active: false},{name: 'dasda', url: "#", active: false},{name: 'dasda', url: "#", active: false}])
+					.page__main
+						.page__header
+							h1 asdasdjk
+						.page__content
+				.page
+				{
+					display: flex;
+				}
+				.page__left-side
+				{
+					
+				}
+				.page__content
+				{
+					
+				}
+			

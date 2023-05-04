@@ -1,0 +1,36 @@
+- var links = [{name: 'asd',url: ''},{name: 'asd',url: ''},{name: 'asd',url: ''},{name: 'asd',url: ''}]
+header.header#header 
+    nav.nav#nav 
+        a(href="#").right__link
+            i.logo__header#logo_header 
+                +icon("logo", "main__logo")
+        ul.middle__links
+
+                li.li__link
+                    a(href="#") Инвесторам
+                li.li__link
+                    a(href="#") Закупки
+                li.li__link
+                    a(href="#") О компании          
+                li.li__link
+                    a(href="#") Пресс-центр
+                li.li__link
+                    a(href="#") Контакты
+
+        ul.left__links
+            li.li__link
+                a(href="#")
+                    div.header__search
+                        +icon("search","header__search")
+            li.li__link
+                a(href="#")
+                    div.header__cards
+                        +icon("Vector","header__card")
+                        div Топливные карты
+
+//            each dd in links
+                li.li__link
+                    a(href=dd.url) 
+                        span=dd.name 
+
+

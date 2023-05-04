@@ -1,0 +1,130 @@
+@mixin font-d-h1
+{
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 120%;
+    @content;
+}
+@mixin font-d-h2
+{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    @content;
+}
+@mixin font-d-h3
+{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 150%;
+    @content;
+}
+@mixin font-d-h4
+{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%;
+    @content;
+}
+@mixin font-d-h5
+{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 150%;
+    @content;
+}
+@mixin font-d-h6
+{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 120%;
+    @content;
+}
+
+@mixin font-d-header
+{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    @content;
+}
+
+@mixin font-d-s1
+{
+    font-family: 'Roboto Condensed';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    @content;
+}
+@mixin font-d-s2
+{
+    font-family: 'Roboto Condensed';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    @content;
+}
+@mixin font-d-s3
+{
+    font-family: 'Roboto Condensed';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    @content;
+}
+@mixin font-d-t1
+{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    @content;
+}
+@mixin font-d-t1-m
+{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 150%;
+    @content;
+}
+@mixin font-d-t2
+{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    @content;
+}
+@mixin font-d-link
+{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    text-decoration-line: underline;
+    color: #0078D2;
+    @content;
+}
+
+@mixin font-d-card-data
+{
+    font-family: 'Roboto Condensed';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #0078D2;
+    @content;
+}
+@mixin font-d-card-bottom{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    color: #FFFFFF;
+    @content;
+}

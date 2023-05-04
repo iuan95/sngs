@@ -1,0 +1,9 @@
+.news-content{
+    width: 1300px;
+    height: 454px;
+    background: rgb(182, 175, 175);
+    display: grid;
+}
+.news-title{
+    @include font-d-h2
+}

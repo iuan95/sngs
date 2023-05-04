@@ -1,0 +1,35 @@
+.advertisement-content-card{
+    width: 310px;
+    height: 205px;
+    background-color: #EAF5FF;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.advertisement-content-card__top{
+
+    @include font-d-card-data;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.advertisement-content-card__bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    @include font-d-card-bottom;
+    color: black
+}
+.advertisement-content-card__bottom-text{
+    font-size: 16px;
+    color: black;   
+    line-height: 130%;
+}
+.advertisement-content{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}

@@ -1,0 +1,12 @@
+.azc-content{
+    width: 1299px;
+    height: 560px;
+    background: var(--color-blue);
+}
+.azc-content{
+    display: grid;
+    grid-template-columns: 990px 1fr;
+}
+.azc-map{
+    background-color: rgb(59, 190, 190);
+}

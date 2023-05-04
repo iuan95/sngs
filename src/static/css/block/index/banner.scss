@@ -1,0 +1,49 @@
+.banner-content{
+    border-radius: 5px;
+    box-sizing: border-box;
+    max-width: 1300px;
+    height: 290px;
+    background: var(--color-linear-gradient);
+    padding: 45px 110px 0 110px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+}                    
+.banner-content-left-icons{
+    display: flex;
+    flex-direction: row;
+
+}
+.banner-content-left-title{
+    @include font-d-h4{
+        color: white;
+    }
+    margin-bottom: 15px;
+}
+.banner-content-left-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: white;
+
+}
+.banner-content-left-icons{
+    margin-top: 24px;
+}
+.banner-content-right {
+    position: relative;
+}
+.phones{
+
+    position: absolute;
+    top: -45px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.apps__icon{
+
+    width: 262px;
+    height: 38px;
+}
