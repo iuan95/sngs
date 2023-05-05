@@ -1,0 +1,18 @@
+.mission-content-body{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+} 
+.mission-content-body--card{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+} 
+.mission-content-body--card--title{
+    @include font-d-h2{
+        font-size: 40px;
+    }
+}
+.mission-content-body--card--desc{
+    @include font-d-s1;
+}

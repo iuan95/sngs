@@ -10,6 +10,7 @@
     font-weight: 400;
     font-size: 48px;
     line-height: 120%;
+    font-style: normal;
     @content;
 }
 @mixin font-d-h3

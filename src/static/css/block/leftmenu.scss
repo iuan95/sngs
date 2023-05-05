@@ -1,0 +1,25 @@
+.about-content{
+    display: grid;
+    grid-template-columns: 440px 1fr;
+}
+.left-menu-content{
+    margin-top: 55px;
+
+}
+.left-menu-main-links{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0;
+}
+.right-content-main{
+    margin-top: 34px;
+
+}
+.left-menu-main {
+    position: sticky;
+    top: 30px;
+}
+.left-menu-main-link{
+    margin: 0;
+}

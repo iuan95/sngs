@@ -1,0 +1,19 @@
+extends ../layout/layout.pug
+block vars
+//- var title = 'О компании';
+block page
+    include ../includes/header.pug   
+    .container
+        section 
+            .about-content 
+                .left-menu-content
+                    +menu([{title: "Общая информация", url: "/about.html"}, {title: "Миссия и стратегия", url: "/missions.html"}, {title: "Руководство", url: "#"}, {title: "Партнеры и клиенты", url: "#"}, {title: "Ответственность", url: "#"}, {title: "Наши проекты", url: "#"}, {title: "Антимонопольный комплаенс", url: "#"}, {title: "Учредительные документы", url: "#"}, {title: "Вакансии", url: "#"}])
+                .right-content-main.mission-content
+                    h1.right-content-main--title Миссии и стратегии
+                    .right-content-main--content--top 
+                    .mission-content-body 
+                        each val in [{title: "Миссия Общества", desc: "Быть гарантом нефтепродуктообеспечения производительных сил на территории Республики Саха (Якутия)."}, {title: "Стратегическая цель", desc: "Повышение рентабельности, сохранение доли рынка, оптимизация централизованного управления нефтебазами и АЗС."}, {title: "Стратегия развития", desc: "Стратегия развития АО «Саханефтегазсбыт» на период 2017-2022 годы одобрена Экономическим Советом при Правительстве Республики Саха (Якутия) и утверждена Советом директоров АО «Саханефтегазсбыт»."}]
+                            ul.mission-content-body--card 
+                                li.mission-content-body--card--title= val.title 
+                                li.mission-content-body--card--desc= val.desc
+                    

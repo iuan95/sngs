@@ -1,0 +1,29 @@
+extends ../layout/layout.pug
+block vars
+//- var title = 'О компании';
+block page
+    include ../includes/header.pug   
+    .container
+        section 
+            .about-content 
+                .left-menu-content
+                    +menu([{title: "Общая информация", url: "/about.html"}, {title: "Миссия и стратегия", url: "/missions.html"}, {title: "Руководство", url: "#"}, {title: "Партнеры и клиенты", url: "#"}, {title: "Ответственность", url: "#"}, {title: "Наши проекты", url: "#"}, {title: "Антимонопольный комплаенс", url: "#"}, {title: "Учредительные документы", url: "#"}, {title: "Вакансии", url: "#"}])
+                .right-content-main
+                    h1.right-content-main--title Общая Информация
+                    .right-content-main--subtitle 
+                        span Саханефтегазсбыт – главный участник рынка<br> нефтепродуктов в Республике Саха (Якутия)
+                    .right-content-main--body--text
+                        span Компания является самостоятельно хозяйствующим предприятием со<br> стопроцентной долей республики в уставном капитале. В системе<br> нефтепродуктообеспечения компания работает более 20 лет и создано на базе<br> государственного предприятия «Якутнефтепродукт», обеспечивая свыше 20 %<br> потребностей республики в стратегически важном для ее жизнеобеспечения<br> продукте. АО «Саханефтегазсбыт» это сеть оптовой и розничной торговли<br> нефтепродуктами на 19 нефтебазах, 99 автозаправочных станциях,<br> расположенных по всей территории республики. Компания владеет автопарком<br> топливозаправщиков и бензовозов.
+                    .right-content-main--content
+                        .right-content-main--content--top 
+                        .right-content-main--content--bottom
+                            each val in [{n:"34", name: "район Якутии", des: "Egestas dignissim orci sed sed"}, {n:"520", name: "haretra sed arcu", des: "Egestas dignissim orci sed sed"},{n:"1.3", name: "gestas dignissim", des: "Egestas dignissim orci sed sed"},{n:"2", name: "haretra sed arcu", des: "1Egestas dignissim orci sed sed"}]
+                                ul.right-content-main--content--bottom--card 
+                                    li.right-content-main--content--bottom--card-title= val.n 
+                                    li.right-content-main--content--bottom--card-subtitle= val.name 
+                                    li.right-content-main--content--bottom--card-description= val.des
+                    .right-content-main-bottom 
+                        h4 Основные виды деятельности
+                        each val in ["Организация завоза и реализации нефтепродуктов для нужд населения республики, в том числе труднодоступных и арктических районов", "Оптовая и розничная реализация нефтепродуктов", "Реализация нефтепродуктов в отдаленных труднодоступных сельских местностях посредством доставки тарированного топлива;", "Услуги по приему, складским операциям, хранению и перевалке нефтепродуктов", "Организация работы автозаправочных станций и их эксплуатация."]
+                            li= val   
+                        
