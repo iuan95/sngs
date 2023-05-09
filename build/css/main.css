@@ -134,6 +134,11 @@ section {
   margin-bottom: 40px;
 }
 
+.img-icon {
+  display: grid;
+  place-items: center;
+}
+
 .left-menu-main-link {
   font-weight: 400;
   font-size: 20px;
@@ -425,6 +430,183 @@ nav ul {
   margin-bottom: 100px;
 }
 
+.otvetstvennost-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+.otvetstvennost-card .value {
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 33px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #0078D2;
+}
+.otvetstvennost-card span span {
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: black;
+}
+
+.nashiproyekty-content--description p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  margin-bottom: 50px;
+}
+
+.nashiproyekty-content--img {
+  width: 860px;
+  height: 540px;
+  background-color: #D9D9D9;
+  border-radius: 5px;
+}
+
+.antimonopolnyykomplayens-content {
+  display: flex;
+  row-gap: 30px;
+  flex-direction: column;
+}
+
+.antimonopolnyykomplayens-description .value {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 150%;
+  color: #0078D2;
+}
+
+.antimonopolnyykomplayens-subtitle span, .antimonopolnyykomplayens-description span span {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  line-height: 33px;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.anothertitle {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 150%;
+}
+
+.antimonopolnyykomplayens-target--list > ul {
+  padding-left: 34px;
+  padding-top: 20px;
+}
+
+.antimonopolnyykomplayens-target--list > ul > li {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  list-style-type: disc;
+}
+.antimonopolnyykomplayens-target--list > ul > li:last-child {
+  margin: 0;
+}
+
+.antimonopolnyykomplayens-target--list-pdf {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.antimonopolnyykomplayens-target--list--dowload {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 15px;
+}
+
+.pdf__icon, .link__icon {
+  width: 48px;
+  height: 48px;
+}
+
+.partnersandclients-content--top--title, .partnersandclients-content--bottom--title {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  font-style: normal;
+  line-height: 57, 6px;
+}
+
+.partnersandclients-content--top {
+  margin-bottom: 100px;
+}
+
+.partnersandclients-content--top--content--icons {
+  display: flex;
+  column-gap: 40px;
+}
+
+.partnersandclients-content--bottom--content {
+  display: flex;
+  column-gap: 40px;
+}
+
+.partnersandclients-content--bottom--content .img-icon {
+  width: 141px;
+  height: 103px;
+  background-color: #D9D9D9;
+}
+.partnersandclients-content--bottom--content .img-icon:first-child {
+  width: 200px;
+  height: 103px;
+}
+
+.rukovodstvo-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 50px;
+}
+
+.rukovodstvo-card {
+  width: 420px;
+  min-height: 429px;
+  display: flex;
+  flex-direction: column;
+}
+
+.rukovodstvo-card--img {
+  width: 420px;
+  height: 260px;
+  border-radius: 5px;
+  background-color: #D9D9D9;
+  margin-bottom: 25px;
+}
+
+.rukovodstvo-card--description {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.rukovodstvo-card--name {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 120%;
+  max-width: 400px;
+  margin-bottom: 8px;
+}
+
+.rukovodstvo-card--desc {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  line-height: 30px;
+}
+
 .mission-content-body {
   display: flex;
   flex-direction: column;
@@ -468,7 +650,7 @@ nav ul {
   background-color: rgb(59, 190, 190);
 }
 
-.about-content {
+.the-main-content {
   display: grid;
   grid-template-columns: 440px 1fr;
 }

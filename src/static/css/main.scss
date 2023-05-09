@@ -51,7 +51,11 @@ section{
     @include font-d-h2;
     margin-bottom: 40px;
 }
-
+.img-icon 
+{
+    display: grid;
+    place-items: center;
+}
 .left-menu-main-link{
     @include font-d-t2;
 } 	
@@ -62,7 +66,16 @@ section{
 @import "block/index//advertisement.scss";
 @import "block/index//banner.scss";
 @import "block/about//about.scss";
+
+@import "block/otvetstvennost//otvetstvennost.scss";
+@import "block/nashiproyekty//nashiproyekty.scss";
+@import "block/antimonopolnyykomplayens//antimonopolnyykomplayens.scss";
+
+@import "block/uchreditelnyyedokumenty//uchreditelnyyedokumenty.scss";
+
+
+@import "block/partnersandclients//partnersandclients.scss";
+@import "block/rukovodstvo//rukovodstvo.scss";
 @import "block/missions//missions.scss";
 @import "block/index//azc.scss";
 @import "block/leftmenu.scss";
-

@@ -1,0 +1,44 @@
+extends ../layout/layout.pug
+block vars
+//- var title = 'О компании';
+block page
+    include ../includes/header.pug   
+    .container
+        section 
+            .the-main-content 
+                .left-menu-content
+                    +menu([{title: "Общая информация", url: "/about.html"}, {title: "Миссия и стратегия", url: "/missions.html"}, {title: "Руководство", url: "/rukovodstvo.html"}, {title: "Партнеры и клиенты", url: "/partnersandclients.html"}, {title: "Ответственность", url: "/otvetstvennost.html"}, {title: "Наши проекты", url: "/nashiproyekty.html"}, {title: "Антимонопольный комплаенс", url: "/antimonopolnyykomplayens.html"}, {title: "Учредительные документы", url: "/uchreditelnyyedokumenty.html"}, {title: "Вакансии", url: "#"}])
+                .right-content-main
+                    h1.right-content-main--title Антимонопольный комплаенс
+                    .antimonopolnyykomplayens-content
+                        .antimonopolnyykomplayens-subtitle
+                            span 
+                                |В соответствии с Национальным планом развития конкуренции в Российской 
+                                | Федерации на 2018 - 2020 годы, утвержденного Указом Президента Российской
+                                | Федерации от 21.12.2017 № 618, а также во исполнение поручения главы
+                                | Республики Саха (Якутия) от 29.07.2019 года № Пл-17-П-А1, АО
+                                | «Саханефтегазсбыт» разрабатывает внутреннюю систему предупреждения
+                                | антимонопольных рисков путем внедрения антимонопольного комплаенса.
+                        .antimonopolnyykomplayens-description
+                            span.value 
+                                |Антимонопольный комплаенс 
+                                span  – это система внутреннего обеспечения 
+                                        |соответствия требованиям антимонопольного законодательства.
+
+                        .antimonopolnyykomplayens-target--list
+                            .anothertitle 
+                                span Цели антимонопольного комплаенса:
+                            ul
+                                each val in [{name: "обеспечение соответствия деятельности Общества требованиям антимонопольного законодательства;"}, {name: "обеспечение соответствия деятельности Общества требованиям антимонопольного законодательства; профилактика нарушения требований антимонопольного законодательства в деятельности Общества."}]
+                                     li= val.name
+                        .antimonopolnyykomplayens-target--list
+                            .anothertitle 
+                                span Задачи антимонопольного комплаенса:
+                            ul
+                                each val in [{name: "выявление рисков нарушения антимонопольного законодательства;"}, {name: "управление рисками нарушения антимонопольного законодательства;"}, {name: "контроль за соответствием деятельности Общества требованиям антимонопольного законодательства;"},{name: "оценка эффективности функционирования в Общества антимонопольного комплаенса."}]
+                                     li= val.name
+                        .antimonopolnyykomplayens-target--list-pdf
+                            each val in [{name: "Положение о комплеансе", url: "#", icon: "pdf"}, {name: "Доклад об антимонопольном комплаенсе в АО Саханефтегазсбыт за 2021 год", url: "#", icon: "pdf"},{name: "Доклад об антимонопольном комплаенсе в АО Саханефтегазсбыт за 2020 год", url: "#", icon: "pdf"}]
+                                .antimonopolnyykomplayens-target--list--dowload
+                                    +icon(val.icon, val.icon + "__icon") 
+                                    a(href= val.url download)= val.name 

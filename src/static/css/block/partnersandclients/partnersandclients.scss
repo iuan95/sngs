@@ -1,0 +1,32 @@
+.partnersandclients-content{
+
+}
+
+.partnersandclients-content--top--title, .partnersandclients-content--bottom--title{
+    margin-bottom: 40px;
+    @include font-d-h2{
+        line-height: 57,6px;
+    };
+
+}
+.partnersandclients-content--top{
+    margin-bottom: 100px;
+}
+.partnersandclients-content--top--content--icons {
+    display: flex;
+    column-gap: 40px;
+}
+.partnersandclients-content--bottom--content{
+    display: flex;
+    column-gap: 40px;
+}
+.partnersandclients-content--bottom--content .img-icon {
+    width: 141px;
+    height: 103px;
+    background-color: #D9D9D9;
+    &:first-child 
+    {
+        width: 200px;
+        height: 103px;
+    }
+}

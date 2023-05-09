@@ -1,0 +1,21 @@
+extends ../layout/layout.pug
+
+
+
+block vars
+//- var title = 'О компании';
+block page
+    include ../includes/header.pug   
+    .container
+        section 
+            .the-main-content 
+                .left-menu-content
+                    +menu([{title: "Общая информация", url: "/about.html"}, {title: "Миссия и стратегия", url: "/missions.html"}, {title: "Руководство", url: "/rukovodstvo.html"}, {title: "Партнеры и клиенты", url: "/partnersandclients.html"}, {title: "Ответственность", url: "/otvetstvennost.html"}, {title: "Наши проекты", url: "/nashiproyekty.html"}, {title: "Антимонопольный комплаенс", url: "/antimonopolnyykomplayens.html"}, {title: "Учредительные документы", url: "/uchreditelnyyedokumenty.html"}, {title: "Вакансии", url: "#"}])
+                .right-content-main
+                    h1.right-content-main--title Учредительные документы
+                    .uchreditelnyyedokumenty-content.antimonopolnyykomplayens-content
+
+                        each val in [ {name: 'Устав АО "Саханефтегазсбыт (редакция №6)"', url: "#", icon: "pdf"}, {name: "Постановление Правительства РС (Я) о создании Общества", url: "#", icon: "pdf"}, {name: "Свидетельство ФНС о гос. регистрации юридического лица", url: "#", icon: "pdf"}, {name: "Свидетельство о внесении записи в ЕГРЮЛ о юридическом лице", url: "#", icon: "pdf"},  {name: "Свидетельство о постановке на учет в налоговом органе", url: "#", icon: "pdf"},  {name: "Свидетельство о государственной регистрации, выданная МинЮстом РС Я", url: "#", icon: "pdf"}, {name: 'Приказ "О вступлении в должность генерального директора Общества"', url: "#", icon: "pdf"}, {name: 'Выписка из протокола №13-19 заседания Совета директоров АО "Саханефтегазсбыт"', url: "#", icon: "pdf"}, {name: 'Уведомление о постановке на учет в налоговом органе юр.лица в качестве крупнейшего налогоплательщика', url: "#", icon: "link"}]
+                            .antimonopolnyykomplayens-target--list--dowload
+                                +icon(val.icon, val.icon + "__icon") 
+                                a(href= val.url download)= val.name 
